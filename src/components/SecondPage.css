@@ -1,0 +1,28 @@
+.secondpage{
+    background-color: rgba(1, 1, 37, 0.893);
+    color: azure;
+}
+.firstRow{
+   display: flex;
+   justify-content: space-evenly;
+}
+.imageBoxOne{
+    height: 340px;
+    background-image: url('../assets/page2.jpg');
+    background-repeat: no-repeat;
+    background-size:auto;
+    border-radius: 40px 10px;
+}
+.imageBoxTwo{
+    height: 340px;
+    background-image: url('../assets/building.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px 10px;
+}
+.pngimage{
+    position: absolute;
+    z-index: -1;
+    filter: brightness(130%);
+    max-width: 90%;
+}

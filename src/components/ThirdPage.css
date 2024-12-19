@@ -1,0 +1,36 @@
+.thirdpage{
+    background-color: #F1F1F1;
+    padding: 30px;
+}
+
+.arrow{
+    margin-left: 10px;
+    height: 20px;
+    width: 20px;
+    transition: 1000ms;
+}
+.arrow:hover{
+    transform: translateX(20px);
+}
+.card{
+    transition: 700ms;
+}
+.card:hover{
+    cursor: pointer;
+    transform:skewX(3deg);
+    box-shadow: 0px 5px 15px black;
+}
+.letters{
+    filter: drop-shadow(2px 1px 5px black);
+}
+
+.approach{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dotted black;
+}
+.cardStack{
+    margin-top: -200px;
+}

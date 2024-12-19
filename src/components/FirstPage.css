@@ -1,0 +1,11 @@
+.firstpage{
+    margin-top: 0px;   
+    height: 650px;
+    background-image: url("/src/assets/constructionbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.quote{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 5px;
+}
