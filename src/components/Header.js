@@ -13,49 +13,28 @@ function Header() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse ms-2" id="navbarNavDropdown">
-            <ul className="navbar-nav ms-5">
+            <ul style={{marginLeft:'170px'}} className="navbar-nav">
             <li className="nav-item dropdown ms-4 nav-underline">
-                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a className="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   About Us
                 </a>
-                <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#">Action</a></li>
-                  <li><a className="dropdown-item" href="#">Another action</a></li>
-                  <li><a className="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
+            </li>
 
               <li className="nav-item dropdown ms-4 nav-underline">
                 <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Locations
                 </a>
                 <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#">Action</a></li>
-                  <li><a className="dropdown-item" href="#">Another action</a></li>
-                  <li><a className="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-
-              <li className="nav-item dropdown ms-4 nav-underline">
-                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Approach
-                </a>
-                <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#">Action</a></li>
-                  <li><a className="dropdown-item" href="#">Another action</a></li>
-                  <li><a className="dropdown-item" href="#">Something else here</a></li>
+                  <li><a className="dropdown-item" href="#">India</a></li>
+                  <li><a className="dropdown-item" href="#">America</a></li>
+                  <li><a className="dropdown-item" href="#">Japan</a></li>
                 </ul>
               </li>
               
               <li className="nav-item dropdown ms-4 nav-underline">
-                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Work
+                <a className="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Our Works
                 </a>
-                <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#">Action</a></li>
-                  <li><a className="dropdown-item" href="#">Another action</a></li>
-                  <li><a className="dropdown-item" href="#">Something else here</a></li>
-                </ul>
               </li>
 
               <li className="nav-item dropdown ms-4 me-5 nav-underline">
