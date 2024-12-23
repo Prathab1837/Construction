@@ -18,18 +18,18 @@ function FourthPage() {
         </div>
         <div className="carousel-inner">
             <div className="carousel-item active" data-bs-interval="5000">
-                <img src={imageone} className="d-block w-100" alt="pic"/>
+            <img src={imageone} className="d-block w-100 img-fluid" alt="pic"/>
             <div style={{backgroundColor:'#F1F1F1'}} className="carousel-caption slideBox d-none d-md-block">
                 <SiPinboard size={50} color="#4C0070" className='pin'/>
-                <div className='slideLetters'>
+                <div className="slideLetters">
                     <h6 style={{color:'grey'}}>How We Work</h6>
                     <h2 className='mb-4' style={{color:'rgba(1, 1, 37, 0.893)'}}>Innovation</h2>
                     <p style={{color:'#C40D3B'}}>Innovation in construction transforms the industry with advanced technologies, sustainable methods, and smart designs, delivering efficient, eco-friendly, and future-ready solutions</p>
-                </div>     
+                </div>
             </div>
             </div>
             <div className="carousel-item" data-bs-interval="5000">
-            <img src={imagetwo} className="d-block w-100" alt="pic"/>
+            <img src={imagetwo} className="d-block w-100 img-fluid" alt="pic"/>
             <div style={{backgroundColor:'#F1F1F1'}} className="carousel-caption slideBox d-none d-md-block">
                 <SiPinboard size={50} color="#4C0070" className='pin'/>
                 <div className="slideLetters">
@@ -40,7 +40,7 @@ function FourthPage() {
             </div>
             </div>
             <div className="carousel-item" data-bs-interval="5000">
-            <img src={imagethree} className="d-block w-100" alt="pic"/>
+            <img src={imagethree} className="d-block w-100 img-fluid" alt="pic"/>
             <div style={{backgroundColor:'#F1F1F1'}} className="carousel-caption slideBox d-none d-md-block">
                 <SiPinboard size={50} color="#4C0070" className='pin'/>
                 <div className="slideLetters">
@@ -52,7 +52,7 @@ function FourthPage() {
             </div>
             </div>
             <div className="carousel-item" data-bs-interval="5000">
-            <img src={imagefour} className="d-block w-100" alt="pic"/>
+            <img src={imagefour} className="d-block w-100 img-fluid" alt="pic"/>
             <div style={{backgroundColor:'#F1F1F1'}} className="carousel-caption slideBox d-none d-md-block">
                 <SiPinboard size={50} color="#4C0070" className='pin'/>
                 <div className="slideLetters">

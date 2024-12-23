@@ -1,11 +1,3 @@
-.slideBox{
-    position: relative;
-    height: 60%;
-    width: 35%;
-    border-radius: 0 80px 80px 80px;
-    box-shadow: 5px 5px 20px black;
-    top:150px;
-}
 .slideLetters{
     position: absolute;
     top: 50%;
@@ -30,4 +22,12 @@
 
 .carousel-inner {
     height: 500px; /* Matches the image height */
+}
+.carousel-caption.slideBox {
+    position: absolute; /* Ensure it doesn't inherit Bootstrap's bottom alignment */
+    width: 40%; /* Allow it to use .slideBox's defined width */
+    height: 60%;
+    border-radius: 0 80px 80px 80px;
+    box-shadow: 5px 5px 20px black;
+    top:150px;
 }

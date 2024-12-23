@@ -14,7 +14,7 @@ function ThirdPage() {
           <div className="col-sm-3 card border" style={{ width: '18rem' }}>
             <img src={careerImg} className="card-img-top" alt="pic" height="240px" />
             <div className="card-body">
-              <h5 className="card-title">Build Your Career</h5>
+              <h5 className="card-title">We Build Your Thoughts</h5>
               <a href="#">Learn More</a>
               <IoIosArrowDropright className='arrow' />
             </div>

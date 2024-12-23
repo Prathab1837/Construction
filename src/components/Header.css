@@ -10,4 +10,18 @@
 .navbar:hover{
     background-color: rgba(229, 194, 65, 0.949);
 }
+.navbar .nav-link a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.639);
+}
+.navbar .nav-link a:hover{
+    color: rgba(0, 0, 0, 0.782);
+} 
+a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.639);
+}
+a:hover{
+    color: rgba(0, 0, 0, 0.782);
+}
 

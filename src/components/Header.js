@@ -2,6 +2,7 @@ import React from 'react';
 import {FiPhoneCall} from 'react-icons/fi';
 import './Header.css';
 import logo from '../assets/SuffolkLogo.jpg';
+import {Link} from 'react-router-dom';
 
 function Header() {
   return (
@@ -14,45 +15,34 @@ function Header() {
           </button>
           <div className="collapse navbar-collapse ms-2" id="navbarNavDropdown">
             <ul style={{marginLeft:'170px'}} className="navbar-nav">
-            <li className="nav-item dropdown ms-4 nav-underline">
-                <a className="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  About Us
-                </a>
+            <li className="nav-item dropdown ms-5 nav-underline">
+                <div className="nav-link"  role="button" aria-expanded="false">
+                  <Link to='/home'>Home</Link>
+                </div>
+            </li>
+            <li className="nav-item dropdown ms-5 nav-underline">
+                <div className="nav-link"  role="button" aria-expanded="false">
+                  <Link to='/about'>About Us</Link>
+                </div>
             </li>
 
-              <li className="nav-item dropdown ms-4 nav-underline">
-                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Locations
-                </a>
-                <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#">India</a></li>
-                  <li><a className="dropdown-item" href="#">America</a></li>
-                  <li><a className="dropdown-item" href="#">Japan</a></li>
-                </ul>
+              <li className="nav-item dropdown ms-5 nav-underline">
+                <div className="nav-link" role="button" aria-expanded="false">
+                  <Link to='/locations'>Locations</Link>
+                </div>
               </li>
               
-              <li className="nav-item dropdown ms-4 nav-underline">
-                <a className="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Our Works
-                </a>
-              </li>
-
-              <li className="nav-item dropdown ms-4 me-5 nav-underline">
-                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Careers
-                </a>
-                <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#">Action</a></li>
-                  <li><a className="dropdown-item" href="#">Another action</a></li>
-                  <li><a className="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+              <li className="nav-item dropdown ms-5 me-5 nav-underline">
+                <div className="nav-link" role="button" aria-expanded="false">
+                  <Link to='/ourworks'>Our Works</Link>
+                </div>
               </li>
 
             </ul>
 
-            <div className='ms-5'>
+            <div className='ms-5 contact'>
               <FiPhoneCall className='me-3' />
-              <span>Contact Us</span>
+              <Link to='/form'>Contact Us</Link>
             </div>
 
           </div>

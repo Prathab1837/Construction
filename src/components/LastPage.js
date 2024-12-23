@@ -10,7 +10,7 @@ function LastPage() {
         <div className='container'>
             <div className='row'>
 
-                <div className='col-6'>
+                <div className='col-sm'>
                     <div className='mb-5'><img src={logo} alt="pic" width={300} /></div>
                     <div className='details py-4 row'>
                         <div className='col'><h6>More from Suffolk</h6> 
@@ -28,7 +28,7 @@ function LastPage() {
                     </div>
                 </div>
 
-                <div className='col-6'>
+                <div className='col-sm'>
                     <div className='mt-5 row'>
                         <div className=' details col-6'>
                             <div><h5>About Us</h5></div>
