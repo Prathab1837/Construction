@@ -5,3 +5,6 @@
 .details{
     cursor: pointer;
 }
+.underlineText:hover{
+    text-decoration: underline;
+}

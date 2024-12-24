@@ -1,0 +1,16 @@
+form .row{
+    margin-top: 10px;
+}
+form input , select, form button{
+    margin-left: 12px;
+    padding: 5px;
+    width: 100%;
+}
+textarea{
+    margin-left: 12px;
+    width: 100%;
+}
+form .btn{
+    width: 50%;
+    margin-left: 12px;
+}

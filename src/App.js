@@ -5,7 +5,7 @@ import About from './Pages/About'
 import Locations from './Pages/Locations'
 import OurWorks from './Pages/OurWorks'
 import LastPage from './components/LastPage'
-import Form from './components/Form'
+// import Form from './Pages/Form'
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
         <Route path='about' element={<About />} />
         <Route path='locations' element={<Locations />} />
         <Route path='ourworks' element={<OurWorks />} />
-        <Route path='form' element={<Form />} />
+        {/* <Route path='form' element={<Form />} /> */}
       </Routes>
       <LastPage />
     </BrowserRouter>

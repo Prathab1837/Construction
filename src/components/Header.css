@@ -5,7 +5,7 @@
     font-weight: bolder;
     font-size: large;
     letter-spacing: 1px;
-    transition: 1500ms;
+    transition: 500ms;
 }
 .navbar:hover{
     background-color: rgba(229, 194, 65, 0.949);

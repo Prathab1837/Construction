@@ -3,10 +3,11 @@ import {FiPhoneCall} from 'react-icons/fi';
 import './Header.css';
 import logo from '../assets/SuffolkLogo.jpg';
 import {Link} from 'react-router-dom';
+import Form from '../Pages/Form';
 
 function Header() {
   return (
-
+<>
       <nav className=" navbar navbar-expand-lg position-relative">
         <div className=" navigator container-fluid py-2">
           <a className="navbar-brand ms-5" href="#"><img src={logo} alt="Logo" width={150} /></a>
@@ -40,14 +41,25 @@ function Header() {
 
             </ul>
 
-            <div className='ms-5 contact'>
-              <FiPhoneCall className='me-3' />
-              <Link to='/form'>Contact Us</Link>
+            <div className='d-flex ms-5'>
+              <FiPhoneCall className='mt-1 me-3' />
+              {/* <Link to='/form'>Contact Us</Link> */}
+              <div type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Contact</div>
             </div>
 
           </div>
-        </div>
+        </div> 
       </nav>
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <Form />
+        </div>
+      </div>
+</>
+
 
   )
 }

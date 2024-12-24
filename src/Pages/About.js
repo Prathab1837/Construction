@@ -21,7 +21,7 @@ function About() {
                 </div>
                 <div className='row'>
                     <div className="col-6 "></div>
-                    <div className='py-5 mt-5 mb-4 col-6'>We believe that when caring, ambitious people come together, anything is possible.
+                    <div className='col-6 pb-5 mb-4 fs-5'>We believe that when caring, ambitious people come together, anything is possible.
                         We stand up for and do what's right. We challenge conventions to drive meaningful,
                         positive progress for our clients, our industry, and our communities. While we have distinct and
                         diverse skills and perspectives, we're united in our endless quest to redefine what's possible.
