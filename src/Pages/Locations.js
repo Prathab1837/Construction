@@ -9,7 +9,7 @@ function Locations() {
   return (
     <div>
         <Header />
-        <div className='py-5' style={{backgroundColor:'rgba(1, 1, 37, 0.893)', color:'azure'}}>
+        <div className='py-5 px-4' style={{backgroundColor:'rgba(1, 1, 37, 0.893)', color:'azure'}}>
           <div className='container pb-5'>
             <div className='row'>
                 <div className='d-flex'>

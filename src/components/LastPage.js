@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../assets/SuffolkLogo.jpg';
+import {Link} from 'react-router-dom';
 import { LiaFacebookF, LiaLinkedin, LiaInstagram, LiaYoutube } from "react-icons/lia";
 import { FaXTwitter } from "react-icons/fa6";
 import './LastPage.css';
@@ -11,7 +12,7 @@ function LastPage() {
             <div className='row'>
 
                 <div className='col-sm'>
-                    <div className='mb-5'><img src={logo} alt="pic" width={300} /></div>
+                    <Link to='/home' className='mb-5'><img src={logo} alt="pic" width={300} /></Link>
                     <div className='details py-4 row'>
                         <div className='col'><h6>More from Suffolk</h6> 
                             <div>
@@ -20,7 +21,7 @@ function LastPage() {
                             </div>
                         </div>
                         <div className='col'><h6>Helpful Pages</h6>
-                            <div className='underlineText'>Projects</div>
+                            <Link to='/ourworks'><div className='text-white underlineText'>Projects</div></Link> 
                         </div>
                         <div className='col'><h6>Other Links</h6>
                             <div className='underlineText'>Privacy Policy</div>

@@ -1,9 +1,9 @@
 import React from 'react';
 import './ThirdPage.css';
 import { IoIosArrowDropright } from "react-icons/io";
-import careerImg from '../assets/career.jpg';
-import leadershipImg from '../assets/leadership.jpg';
-import newImg from '../assets/new.jpg';
+import bricks from '../assets/bricks.jpg';
+import cement from '../assets/cement.jpg';
+import steel from '../assets/steel.jpg';
 
 function ThirdPage() {
   return (
@@ -12,31 +12,39 @@ function ThirdPage() {
         <div className='row justify-content-center gy-3 cardsHolder'>
           {/* Card 1 */}
           <div className="col-sm-3 card border" style={{ width: '18rem' }}>
-            <img src={careerImg} className="card-img-top" alt="pic" height="240px" />
+            <img src={bricks} className="card-img-top" alt="pic" height="240px" />
             <div className="card-body">
-              <h5 className="card-title">We Build Your Thoughts</h5>
-              <a href="#">Learn More</a>
-              <IoIosArrowDropright className='arrow' />
+              <h5 className="card-title">Bricks</h5>
+              <ul>
+                <li>High-density clay bricks</li>
+                <li>Load-bearing capacity approved</li>
+                <li>Water absorption within permissible limits</li>
+              </ul>
             </div>
           </div>
           {/* Card 2 */}
           <div className="col-sm-1"></div>
           <div className="col-sm-3 card border" style={{ width: '18rem' , border: '2px solid red'}}>
-            <img src={leadershipImg} className="card-img-top" alt="pic" height="240px" />
+            <img src={cement} className="card-img-top" alt="pic" height="240px" />
             <div className="card-body">
-              <h5 className="card-title">Meet Our Leadership</h5>
-              <a href="#">Learn More</a>
-              <IoIosArrowDropright className='arrow' />
+              <h5 className="card-title">Cement</h5>
+              <ul>
+                <li>Compressive strength: Laboratory-verified</li>
+                <li>Early strength gain monitored</li>
+                <li>High adhesive properties for superior bonding</li>
+              </ul>
             </div>
           </div>
           {/* Card 3 */}
           <div className="col-sm-1"></div>
           <div className="col-sm-3 card" style={{ width: '18rem' }}>
-            <img src={newImg} className="card-img-top" alt="pic" height="240px" />
+            <img src={steel} className="card-img-top" alt="pic" height="240px" />
             <div className="card-body">
-              <h5 className="card-title">Discover What's new</h5>
-              <a href="#">Learn More</a>
-              <IoIosArrowDropright className='arrow' />
+              <h5 className="card-title">Steel</h5>
+              <ul>
+                <li>Steel materials are sourced from ISO 9001-certified manufacturing facilities</li>
+                <li>All steel bars undergo mechanical tests</li>
+              </ul>
             </div>
           </div>
         </div>

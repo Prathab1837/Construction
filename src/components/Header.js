@@ -4,57 +4,61 @@ import './Header.css';
 import logo from '../assets/SuffolkLogo.jpg';
 import {Link} from 'react-router-dom';
 import Form from '../Pages/Form';
+import 'animate.css';
 
 function Header() {
   return (
 <>
       <nav className=" navbar navbar-expand-lg position-relative">
         <div className=" navigator container-fluid py-2">
-          <a className="navbar-brand ms-5" href="#"><img src={logo} alt="Logo" width={150} /></a>
+          <Link to='/home' className="navbar-brand ms-5" href="#"><img className='animate__animated animate__lightSpeedInLeft' src={logo} alt="Logo" width={150} /></Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse ms-2" id="navbarNavDropdown">
+          <div className="collapse navbar-collapse ms-5" id="navbarNavDropdown">
             <ul style={{marginLeft:'170px'}} className="navbar-nav">
-            <li className="nav-item dropdown ms-5 nav-underline">
-                <div className="nav-link"  role="button" aria-expanded="false">
-                  <Link to='/home'>Home</Link>
-                </div>
-            </li>
-            <li className="nav-item dropdown ms-5 nav-underline">
-                <div className="nav-link"  role="button" aria-expanded="false">
-                  <Link to='/about'>About Us</Link>
-                </div>
-            </li>
 
+              <Link to='/about'>
+              <li className="nav-item dropdown ms-5 nav-underline">
+                  <div className="nav-link"  role="button" aria-expanded="false">
+                    About Us
+                  </div>
+              </li>
+              </Link>
+
+              <Link to='/locations'>
               <li className="nav-item dropdown ms-5 nav-underline">
                 <div className="nav-link" role="button" aria-expanded="false">
-                  <Link to='/locations'>Locations</Link>
+                  Locations
                 </div>
               </li>
+              </Link>
               
+              <Link to='/ourworks'>
               <li className="nav-item dropdown ms-5 me-5 nav-underline">
                 <div className="nav-link" role="button" aria-expanded="false">
-                  <Link to='/ourworks'>Our Works</Link>
+                  Our Works
+                </div>
+              </li>
+              </Link>
+
+              <li className='d-flex mt-2 ms-5'>
+                {/* <Link to='/form'>Contact Us</Link> */}
+                <div type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                  <FiPhoneCall className='me-3' size={23} />
+                    Contact
                 </div>
               </li>
 
             </ul>
-
-            <div className='d-flex ms-5'>
-              <FiPhoneCall className='mt-1 me-3' />
-              {/* <Link to='/form'>Contact Us</Link> */}
-              <div type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Contact</div>
-            </div>
-
           </div>
         </div> 
       </nav>
-      <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-        <div class="offcanvas-header">
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <div className="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div className="offcanvas-header">
+            <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
+        <div className="offcanvas-body">
             <Form />
         </div>
       </div>
